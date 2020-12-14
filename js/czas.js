@@ -1,0 +1,3 @@
+
+
+getElementById('czas').innerHTML('lol');
