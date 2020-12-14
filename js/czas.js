@@ -1,3 +1,3 @@
 
 
-getElementById('czas').innerHTML('lol');
+document.getElementById('czas').innerHTML('lol');
