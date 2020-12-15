@@ -6,4 +6,4 @@ var month = dd.getMonth() + 1;
 e += month + '/'
 
 
-document.getElementById('czas').innerHTML =  ;
+document.getElementById('czas').innerHTML = e ;
