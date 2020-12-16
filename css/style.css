@@ -12,10 +12,12 @@
 #pasekMenu {
   position: fixed;
   top: 0px;
-  right: 0px;
-  width: 100%;
+  left: 0px;
+  width: 80%;
   height: 50px; }
 
+@media only screen and (min-width: 350px) {
+  width: 100%; }
 #navMenu {
   min-width: 210px;
   width: 50%;
@@ -119,8 +121,11 @@ nav ul {
         /*color: $kolorMenuLink;*/ } }
 main {
   width: 100%;
-  margin-top: 50px; }
+  margin-top: 100px; }
 
+@media only screen and (min-width: 350px) {
+  main {
+    margin-top: 50px; } }
 @media only screen and (min-width: 768px) {
   main {
     margin-top: 90px; } }

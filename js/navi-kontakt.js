@@ -32,7 +32,7 @@ $(function() {
 	$(window).on("resize", function(){
 		chcecOkno();
 		menuWysoko();			// ustawia wysokość MobNavi względem ekranu
-	//	ustawHambDoWin();
+	//ustawHambDoWin();
 
 	});
 
