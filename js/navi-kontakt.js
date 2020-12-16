@@ -75,7 +75,7 @@ function menuWysoko(){		// Ustawienie Navi na wyskokośc ponad ekran
 if (WinSzer < 768) {
 	menuNAV.css({				// Ustawienie pozycji Menu względem Paska
 		//	"height" :  menuWyso +"px",
-			"right" : "-"+ WinSzer*2 +"px",
+			"right" : "-"+ WinSzer*10 +"px",
 
 		});
 
@@ -186,10 +186,10 @@ function HambMasterFunc() { // CLICK HAMB sprawdza czy menu on/off i uruchamia o
                     },duration:200, queue:false
                 }, 'linear');
 
-								kr1.animate({ "top": kr1Baza  + "px"}
+								kr1.animate({ "top":/* kr1Baza  + */"8px"}
 									,{duration: 200, queue:false}, 'linear');
 
-								kr3.animate({ "top": kr3Baza  + "px"}
+								kr3.animate({ "top": /*kr3Baza  + */"24px"}
 										,{duration: 200, queue:false}, 'linear');
 
 								kr2.delay(100).fadeIn(100);
