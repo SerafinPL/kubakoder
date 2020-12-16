@@ -2,3 +2,9 @@ main {
   width:100%;
   margin-top: 50px;
 }
+
+@media only screen and (min-width: 768px){
+  main {
+    margin-top: 90px;
+  }
+}

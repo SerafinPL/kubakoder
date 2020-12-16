@@ -1,0 +1,55 @@
+
+
+@media only screen and (min-width: 768px){
+
+  #hambMaster{
+    display: none;
+  }
+
+#navMenu{
+  width: 100%;
+  height: 40px;
+}
+
+  nav {
+
+    ul {
+
+  	  width: auto;
+
+      li{
+
+
+  		width: auto;
+
+  		min-width:0px;
+      padding-left: 10px;
+  		/*color: $kolorMenuLink;*/
+  	 }
+
+  	/*a li:hover {
+  		background-color: $kolorMenuBgHov;
+  		color: #80ffaa;
+  	}*/
+
+  	 a, a:visited{
+
+  		width: auto;
+  		min-width:0px;
+      padding-left: 10px;
+
+  		li {
+
+  			height: 40px;
+  			/*color: $kolorMenuLink;*/
+
+
+  		  }
+  	 } // a, a:visited
+
+   } // ul
+
+  } //nav
+
+
+}

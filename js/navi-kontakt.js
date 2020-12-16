@@ -28,11 +28,12 @@ $(function() {
 	chcecOkno();
 	menuWysoko();			// ustawia wysokość MobNavi względem ekranu
 	ustawHambDoWin();		// ustawia wysokość MobHamburgera względem Scroll
-	naviBazowo();
+//	naviBazowo();
 	$(window).on("resize", function(){
 		chcecOkno();
 		menuWysoko();			// ustawia wysokość MobNavi względem ekranu
-		ustawHambDoWin();
+	//	ustawHambDoWin();
+
 	});
 
 });
@@ -44,12 +45,12 @@ $(function() {
 function chcecOkno() {  // dopasowuje body do okna
 	WinSzer = $(window).width();
 	WinWyso = $(window).height();
-	var wysoko = WinWyso - $pasMenuUP.height()-50;
-	$('body').css({				// Ustawienie Body na cały ekran
-			"height" :  wysoko +"px",
-			"width" :  WinSzer +"px",
+	//var wysoko = WinWyso - $pasMenuUP.height()-50;
+//	$('body').css({				 // Ustawienie Body na cały ekran
+	//		"height" :  wysoko +"px",
+	//		"width" :  WinSzer +"px",
 
-		});
+	//	});
 }
 
 
@@ -71,18 +72,25 @@ function menuWysoko(){		// Ustawienie Navi na wyskokośc ponad ekran
 	/*} else {
 		var menuWyso = 50;
 	}*/
-
+if (WinSzer < 768) {
 	menuNAV.css({				// Ustawienie pozycji Menu względem Paska
 		//	"height" :  menuWyso +"px",
-			"right" : "-"+ WinSzer +"px",
+			"right" : "-"+ WinSzer*2 +"px",
+
+		});
+
+} else {
+	menuNAV.css({				// Ustawienie pozycji Menu względem Paska
+		//	"height" :  menuWyso +"px",
+			"right" : "0px",
 
 		});
 }
-
+}
 
 function menuBrak(){
 	menuNAV.animate({				// Ustawienie pozycji Menu względem Paska
-		"right" : "-"+ WinSzer +"px",
+		"right" : "-"+ WinSzer*10 +"px",
 		}
 		,{duration: 200, queue:false}
 		);
@@ -124,7 +132,7 @@ HamburgBox.on("click", function(){ HambMasterFunc() });
 }
 
 
-	function HambMasterFunc() { // CLICK HAMB sprawdza czy menu on/off i uruchamia odpowiednią animacje
+function HambMasterFunc() { // CLICK HAMB sprawdza czy menu on/off i uruchamia odpowiednią animacje
 
 	if (czyX) {
 		czyX = false;
@@ -140,12 +148,10 @@ HamburgBox.on("click", function(){ HambMasterFunc() });
 
 	}
 
-	}
+}
 
 
 	function hambOnMenu(){	// robi X
-
-
 
 				kr2.fadeOut(100);
 
@@ -164,9 +170,7 @@ HamburgBox.on("click", function(){ HambMasterFunc() });
 				kr3.animate({ "top": "12px"}
 					,{duration: 200, queue:false}, 'linear');
 
-    }
-
-
+    } //hambOnMenu()
 
 	function hambOffMenu(){	// Wraca do =
 
@@ -189,4 +193,4 @@ HamburgBox.on("click", function(){ HambMasterFunc() });
 										,{duration: 200, queue:false}, 'linear');
 
 								kr2.delay(100).fadeIn(100);
-    }
+    } //hambOffMenu()
