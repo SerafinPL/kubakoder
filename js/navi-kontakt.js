@@ -67,13 +67,13 @@ function naviBazowo() {  // SCroll Navi do na podtsawie pozycji paska
 function menuWysoko(){		// Ustawienie Navi na wyskokośc ponad ekran
 
 	/*if (WinSzer < 800) {*/
-		var menuWyso = WinWyso + 100;
+		var menuWyso = 50//WinWyso + 100;
 	/*} else {
 		var menuWyso = 50;
 	}*/
 
 	menuNAV.css({				// Ustawienie pozycji Menu względem Paska
-			"height" :  menuWyso +"px",
+		//	"height" :  menuWyso +"px",
 			"right" : "-"+ WinSzer +"px",
 
 		});

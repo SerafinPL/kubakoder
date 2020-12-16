@@ -5,10 +5,7 @@
   width: 100%;
   height: 47px;
 
-  h1{
-    margin: 0;
 
-  }
 }
 
 #navMenu{
@@ -16,7 +13,7 @@
   width: 50%;
   position: fixed;
   right: 0px;
-  top: 5000px;
+  top: 50px;
   background-color: #000;
   z-index: 5;
 }
@@ -34,10 +31,10 @@
 
 #hambMaster {
   position: fixed;
-  top:12px;
+  top:7px;
   right: 15px;
   width: 35px;
-  height: 24px;
+  height: 30px;
   cursor: pointer;
   opacity: 1;
 }
@@ -53,8 +50,7 @@ nav {
 
     display: block;
     margin: 0;
-	   min-width:210px;
-  	padding-top: 40px;
+	  min-width:210px;
 
     li{
 
@@ -62,7 +58,7 @@ nav {
 		float: left;
 		clear:none;
 		width:100%;
-		height: 40px;
+		height: 0px;
 		min-width:210px;
 		/*color: $kolorMenuLink;*/
 	 }
@@ -74,15 +70,11 @@ nav {
 
 	 a, a:visited{
 		text-decoration: none;
-		/*color: $kolorMenuLink;*/
 
-		font-family: neue-haas-grotesk-text,sans-serif;
+		font-family: sans-serif;
 		font-weight: 700;
 		font-style: normal;
-	/*
-		font-family: $NavLinkFontTyp;
-		font-style: normal;
-		font-weight:  900;*/
+
 		font-size: 24px;
 		line-height: 26px;
 
@@ -97,12 +89,9 @@ nav {
 			margin: 0;
 			padding: 10px 5px;
 			width:100%;
-
 			height: 40px;
-
 			/*color: $kolorMenuLink;*/
 			text-align: left;
-
 			background-color: #000;
 
 		  }
