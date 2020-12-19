@@ -72,7 +72,7 @@ function menuWysoko(){		// Ustawienie Navi na wyskokośc ponad ekran
 	/*} else {
 		var menuWyso = 50;
 	}*/
-if (WinSzer < 768) {
+if (WinSzer < 900) {
 	menuNAV.css({				// Ustawienie pozycji Menu względem Paska
 		//	"height" :  menuWyso +"px",
 			"right" : "-"+ WinSzer*10 +"px",
