@@ -2,7 +2,7 @@
 
 main {
   width:100%;
-  margin-top: 100px;
+  margin-top: 130px;
 
   section{
     margin: 10px auto;
@@ -11,7 +11,11 @@ main {
 
 }
 
-
+@media only screen and (min-width: 265px){
+  main {
+    margin-top: 100px;
+  }
+}
 
 
 @media only screen and (min-width: 385px){
