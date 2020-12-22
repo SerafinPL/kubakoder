@@ -1,9 +1,20 @@
+
+
 main {
   width:100%;
   margin-top: 100px;
+
+  section{
+    margin: 10px auto;
+
+  }
+
 }
 
-@media only screen and (min-width: 350px){
+
+
+
+@media only screen and (min-width: 385px){
   main {
     margin-top: 50px;
   }
@@ -13,4 +24,13 @@ main {
   main {
     margin-top: 50px;
   }
+}
+
+
+.efektyKarty{ // styluje section i footer
+  width : 95%;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px 5px #000;
 }

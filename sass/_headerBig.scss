@@ -3,15 +3,17 @@
 @media only screen and (min-width: 900px){
 
   #pasekMenu {
-    width: auto;
+    width: 100%;
+    border-bottom: none;
 
   }
 
   #navMenu{
     width: auto;
-    height: 50px;
+    height: 40px;
     top: 0px;
     background-color: #fff;
+
   }
 
 
@@ -47,7 +49,7 @@
       padding: 10px;
 
   		li {
-  			height: 40px;
+  			height: 30px;
         padding: 0px;
   			/*color: $kolorMenuLink;*/
         background-color: #fff;

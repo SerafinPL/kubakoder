@@ -2,15 +2,31 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 80%;
-  height: 50px;
+  width: 100%;
+  height: 80px;
   font-family: "Courier New";
+  background-color: #fff;
+  border-bottom: 1px solid #000;
 
   h1{
     padding: 10px;
+    width: 80%;
+    min-width: 280px;
   }
 }
 
+@media only screen and (min-width: 385px){
+
+  #pasekMenu {
+
+    height: 40px;
+    h1 {
+      width: 100%;
+
+    }
+  }
+
+}
 
 
 #navMenu{
@@ -21,7 +37,6 @@
   top: 50px;
   background-color: #000;
   z-index: 5;
-
   height: auto;
 }
 
