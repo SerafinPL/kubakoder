@@ -6,7 +6,13 @@ function czasownik(){
 
   var dd = new Date();
 
-  var e = dd.getHours() + ':';
+
+  var godzin = dd.getHours();
+  if (godzin < 10) {
+    e += '0';
+  }
+  var e = godzin + ':';
+
   var minut = dd.getMinutes();
   if (minut < 10) {
     e += '0';
